@@ -11,3 +11,11 @@ def func1(a:list, b:list):
             res_1.append(i)
     return res_1
 
+def func2(a:list, b:list):
+    '''second task'''
+    res_2 = []
+    for j in a:
+        if b.count(j) == 0:
+            res_2.append(j)
+    return res_2
+
