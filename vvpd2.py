@@ -19,3 +19,10 @@ def func2(a:list, b:list):
             res_2.append(j)
     return res_2
 
+def func3(a:list, b:list):
+    '''fird task'''
+    res_3 = []
+    for l in a:
+        if a.count(l) == b.count(l) == 1:
+            res_3.append(l)
+    return res_3
