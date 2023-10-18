@@ -3,6 +3,18 @@ def menu():
     '''program menu'''
     print('1 --> first task \n2 --> second task \n3 --> third task \nstop --> finish program')
 
+def enter():
+    lst = list(input().split(','))
+    FLG = lst[0]
+    try:
+        lst = list(map(int, lst))
+        return lst
+    except ValueError:
+        if FLG == 'stop':
+            return 'stop'
+        print('Try again')
+        return enter()
+
 def func1(a:list, b:list):
     '''first task'''
     res_1 = []
@@ -35,16 +47,16 @@ while F != "stop":
         print('program finished')
         break
     try:
+        print('enter a')
         a = list(map(int, input().split(',')))
     except ValueError:
         print('not all values in list "a" are integers'
               'enter "a" again')
-        try:
-            a = list(map(int, input().split(',')))
-        except ValueError:
-            print('program break')
+        a = enter()
+        if a == 'stop':
             break
     try:
+        print('enter b')
         b = list(map(int, input().split(',')))
     except ValueError:
         print('not all values in list "b" are integers'
