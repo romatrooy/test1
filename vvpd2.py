@@ -48,23 +48,31 @@ while F != "stop":
         break
     try:
         print('enter a')
-        a = list(map(int, input().split(',')))
+        a = list(input().split(','))
+        if a[0] == 'stop':
+            print('program finished')
+            break
+        a = list(map(int, a))
     except ValueError:
         print('not all values in list "a" are integers'
-              'enter "a" again')
+              ' enter "a" again')
         a = enter()
         if a == 'stop':
+            print('program finished')
             break
     try:
         print('enter b')
-        b = list(map(int, input().split(',')))
+        b = list(input().split(','))
+        if b[0] == 'stop':
+            print('program finished')
+            break
+        b = list(map(int, b))
     except ValueError:
-        print('not all values in list "b" are integers'
-              'enter "b" again')
-        try:
-            b = list(map(int, input().split(',')))
-        except ValueError:
-            print('program break')
+        print('not all values in list "a" are integers'
+              ' enter "a" again')
+        b = enter()
+        if b == 'stop':
+            print('program finished')
             break
     if F == '1':
         print(func1(a, b))
