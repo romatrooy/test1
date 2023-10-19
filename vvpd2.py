@@ -38,45 +38,45 @@ def func3(a:list, b:list):
         if a.count(l) == b.count(l) == 1:
             res_3.append(l)
     return res_3
-
-F = ''
-while F != "stop":
-    menu()
-    F = str(input())
-    if F == 'stop':
-        print('program finished')
-        break
-    try:
-        print('enter a')
-        a = list(input().split(','))
-        if a[0] == 'stop':
+if __name__ == '__main__':
+    F = ''
+    while F != "stop":
+        menu()
+        F = str(input())
+        if F == 'stop':
             print('program finished')
             break
-        a = list(map(int, a))
-    except ValueError:
-        print('not all values in list "a" are integers'
-              ' enter "a" again')
-        a = enter()
-        if a == 'stop':
-            print('program finished')
-            break
-    try:
-        print('enter b')
-        b = list(input().split(','))
-        if b[0] == 'stop':
-            print('program finished')
-            break
-        b = list(map(int, b))
-    except ValueError:
-        print('not all values in list "a" are integers'
-              ' enter "a" again')
-        b = enter()
-        if b == 'stop':
-            print('program finished')
-            break
-    if F == '1':
-        print(func1(a, b))
-    elif F == '2':
-        print(func2(a, b))
-    elif F == '3':
-        print(func3(a, b))
+        try:
+            print('enter a')
+            a = list(input().split(','))
+            if a[0] == 'stop':
+                print('program finished')
+                break
+            a = list(map(int, a))
+        except ValueError:
+            print('not all values in list "a" are integers'
+                  ' enter "a" again')
+            a = enter()
+            if a == 'stop':
+                print('program finished')
+                break
+        try:
+            print('enter b')
+            b = list(input().split(','))
+            if b[0] == 'stop':
+                print('program finished')
+                break
+            b = list(map(int, b))
+        except ValueError:
+            print('not all values in list "a" are integers'
+                  ' enter "a" again')
+            b = enter()
+            if b == 'stop':
+                print('program finished')
+                break
+        if F == '1':
+            print(func1(a, b))
+        elif F == '2':
+            print(func2(a, b))
+        elif F == '3':
+            print(func3(a, b))
