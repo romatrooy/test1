@@ -38,6 +38,7 @@ def func3(a:list, b:list):
         if a.count(l) == b.count(l) == 1:
             res_3.append(l)
     return res_3
+
 if __name__ == '__main__':
     F = ''
     while F != "stop":
