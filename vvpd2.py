@@ -4,13 +4,14 @@ def menu():
     print('1 --> first task \n2 --> second task \n3 --> third task \nstop --> finish program')
 
 def enter():
+    '''infiniyt enter'''
     lst = list(input().split(','))
-    FLG = lst[0]
+    flg = lst[0]
     try:
         lst = list(map(int, lst))
         return lst
     except ValueError:
-        if FLG == 'stop':
+        if flg == 'stop':
             return 'stop'
         print('Try again')
         return enter()
