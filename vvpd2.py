@@ -46,6 +46,7 @@ def sth(athr):
 def one():
     pass
 
+
 if __name__ == '__main__':
     F = ''
     while F != "stop":
