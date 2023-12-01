@@ -40,6 +40,9 @@ def func3(a:list, b:list):
             res_3.append(l)
     return res_3
 
+def sth(athr):
+    print(athr)
+
 if __name__ == '__main__':
     F = ''
     while F != "stop":
