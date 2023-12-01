@@ -40,7 +40,12 @@ def func3(a:list, b:list):
             res_3.append(l)
     return res_3
 
-#что - то для комита
+def sth(athr):
+    print(athr)
+
+def one():
+    pass
+
 
 if __name__ == '__main__':
     F = ''
