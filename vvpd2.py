@@ -40,11 +40,10 @@ def func3(a:list, b:list):
             res_3.append(l)
     return res_3
 
-def sth(athr):
-    print(athr)
-
-def one():
-    pass
+# удалил 2 функции
+# сделал форк проекта и назвал его friend
+# создам один коммит
+# запушу
 
 
 if __name__ == '__main__':
