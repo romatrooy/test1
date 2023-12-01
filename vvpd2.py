@@ -43,6 +43,9 @@ def func3(a:list, b:list):
 def sth(athr):
     print(athr)
 
+def one():
+    pass
+
 if __name__ == '__main__':
     F = ''
     while F != "stop":
