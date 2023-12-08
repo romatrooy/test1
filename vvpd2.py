@@ -82,4 +82,4 @@ if __name__ == '__main__':
             print(func2(a, b))
         elif F == '3':
             print(func3(a, b))
-#test 
+#tes
